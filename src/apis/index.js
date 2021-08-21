@@ -4,12 +4,14 @@ console.log(BaseAuthMiddleWare)
 const baseAuthMiddleWare = new BaseAuthMiddleWare();
 
 // add your routes
-//const UsersRoute = require('./users/user_route');
+ const UsersRoute = require('./users/users_route');
 
 exports.setRoutes =(app) => {
   app.use(baseAuthMiddleWare.checkAuthentication.bind(baseAuthMiddleWare));
 
   // add route here
-  //app.use("/api/v1.0/user", UserRoute.router);
+  app.use("/api/v1.0/user", UsersRoute.router);
+  app.use("/api/v1.0/lobs", UsersRoute.router);
+
 
 };

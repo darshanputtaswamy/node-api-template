@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "api": "node api_gen",
-    "test": "jest --forceExit --runInBand --detectOpenHandles --verbose"
+    "test": "jest --forceExit --detectOpenHandles --verbose"
   },
   "keywords": [
     "prisma",
@@ -17,6 +17,7 @@
   "author": "darshanputtaswamy@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "await-to-js": "^3.0.0",
     "axios": "^0.21.1",
     "basic-auth": "^2.0.1",
     "body-parser": "^1.19.0",
@@ -30,6 +31,12 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "jest": "^27.0.6",
     "prisma": "^2.29.1"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*_test.js"
+    ]
   }
 }
