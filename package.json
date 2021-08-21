@@ -1,0 +1,35 @@
+{
+  "name": "node-api-template",
+  "version": "1.0.0",
+  "description": "template to create node backend api's in prisma ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "api": "node api_gen",
+    "test": "jest --forceExit --runInBand --detectOpenHandles --verbose"
+  },
+  "keywords": [
+    "prisma",
+    "node",
+    "api",
+    "template"
+  ],
+  "author": "darshanputtaswamy@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-list-endpoints": "^6.0.0",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "lodash": "^4.17.21",
+    "log4js": "^6.3.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "prisma": "^2.29.1"
+  }
+}
