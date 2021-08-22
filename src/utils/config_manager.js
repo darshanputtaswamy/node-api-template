@@ -27,7 +27,7 @@ dotenv.config({ path: envFile })
             authentication: this.authentication,
             logLevel: process.env.LOG_LEVEL || "debug",
             rejectUnauthorized: process.env.REQUEST_REJECT_UNAUTHORIZED == "true" ? true : false,
-            listenPort: process.env.PORT || 8085,
+            listenPort: process.env.PORT || 3000,
             salt:process.env.SALT
         }
     }
