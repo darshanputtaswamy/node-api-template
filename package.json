@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "dev": "nodemon -L app.js",
     "api": "node api_gen",
     "test": "jest --forceExit --detectOpenHandles --verbose"
   },
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
     "prisma": "^2.29.1"
   },
   "jest": {
